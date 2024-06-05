@@ -1,4 +1,5 @@
 // Classe filha da geométrica, agora somente plana
+
 class FormaGeometricaPlana extends FormaGeometrica {
     double base;
     double altura;

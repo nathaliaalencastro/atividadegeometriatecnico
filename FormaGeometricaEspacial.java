@@ -1,4 +1,5 @@
 // Classe filha para formas geométricas espaciais
+
 class FormaGeometricaEspacial extends FormaGeometrica {
     double base;
     double altura;

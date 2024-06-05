@@ -4,6 +4,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        //CalculadoraFormas calculadoraFormas = new CalculadoraFormas();
+        //FormaGeometrica formaGeometrica = new FormaGeometrica();
+        //FormaGeometricaEspacial formaGeometricaEspacial = new FormaGeometricaEspacial();
+        //FormaGeometricaPlana formaGeometricaPlana = new FormaGeometricaPlana();
+        
 
         while (true) {
             System.out.println("\nEscolha uma opção:");
