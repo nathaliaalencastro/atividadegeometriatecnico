@@ -10,7 +10,7 @@ public class Main {
             System.out.println("1. Calcular área de forma geométrica plana");
             System.out.println("2. Calcular área e volume de forma geométrica espacial");
             System.out.println("3. Calcular área de formas geométricas especiais");
-            System.out.println("4. Encerrar o programa");
+            System.out.println("4. Encerrar o programa\n");
 
             int opcao = scanner.nextInt();
 
