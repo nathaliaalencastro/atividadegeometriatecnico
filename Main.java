@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // executar
-public class Main {
+public class Main extends CalculadoraFormas {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //CalculadoraFormas calculadoraFormas = new CalculadoraFormas();
@@ -19,15 +19,83 @@ public class Main {
 
             int opcao = scanner.nextInt();
 
-            if (opcao == 1) {
-                System.out.println("Digite o valor da base da forma plana:");
-                double base = scanner.nextDouble();
-                System.out.println("Digite o valor da altura da forma plana:");
-                double altura = scanner.nextDouble();
+            switch (opcao) {
+                case 1:
+                System.out.println("Escolha a forma geométrica plana:");
+                System.out.println("1. Quadrado");
+                System.out.println("2. Retângulo");
+                System.out.println("3. Triângulo");
+                System.out.println("4. Triângulo equilátero");
+                System.out.println("5. Trapézio");
+                System.out.println("6. Losango");
+                System.out.println("7. Paralelogramo");
+                int opcao1 = scanner.nextInt();
+                System.out.println("Forma escolhida: "+opcao1+".");
 
-                FormaGeometricaPlana formaPlana = new FormaGeometricaPlana(base, altura);
-                System.out.println("A área da forma plana é: " + formaPlana.calcularArea());
-            } else if (opcao == 2) {
+                switch (opcao1) {
+                    case 1:
+                    System.out.println("Digite o valor do lado:");
+                    double base = scanner.nextDouble();
+
+                    CalculadoraFormas calcularAreaQuadrado = new CalculadoraFormas(base);
+                    System.out.println("A área da forma plana é: " + super.calcularAreaQuadrado);
+                        break;
+
+                    case 2:
+                    System.out.println("Digite o valor do lado:");
+                    double base = scanner.nextDouble();
+
+                    CalculadoraFormas calcularAreaQuadrado = new CalculadoraFormas(base);
+                    System.out.println("A área da forma plana é: " + super.calcularAreaQuadrado);   
+                        break;
+
+                    case 3:
+                    System.out.println("Digite o valor do lado:");
+                    double base = scanner.nextDouble();
+
+                    CalculadoraFormas calcularAreaQuadrado = new CalculadoraFormas(base);
+                    System.out.println("A área da forma plana é: " + super.calcularAreaQuadrado);   
+                        break;
+                    
+                    case 4:
+                    System.out.println("Digite o valor do lado:");
+                    double base = scanner.nextDouble();
+
+                    CalculadoraFormas calcularAreaQuadrado = new CalculadoraFormas(base);
+                    System.out.println("A área da forma plana é: " + super.calcularAreaQuadrado);   
+                        break;
+
+                    case 5:
+                    System.out.println("Digite o valor do lado:");
+                    double base = scanner.nextDouble();
+
+                    CalculadoraFormas calcularAreaQuadrado = new CalculadoraFormas(base);
+                    System.out.println("A área da forma plana é: " + super.calcularAreaQuadrado);   
+                        break;
+
+                    case 6:
+                    System.out.println("Digite o valor do lado:");
+                    double base = scanner.nextDouble();
+
+                    CalculadoraFormas calcularAreaQuadrado = new CalculadoraFormas(base);
+                    System.out.println("A área da forma plana é: " + super.calcularAreaQuadrado);    
+                        break;
+                    
+                    case 7:
+                    System.out.println("Digite o valor do lado:");
+                    double base = scanner.nextDouble();
+
+                    CalculadoraFormas calcularAreaQuadrado = new CalculadoraFormas(base);
+                    System.out.println("A área da forma plana é: " + super.calcularAreaQuadrado);
+
+                        break;
+                    default:
+                    System.err.println("Opção inválida!");
+                        break;
+                }
+                    break;
+
+                case 2:
                 System.out.println("Digite a base da forma espacial:");
                 double base = scanner.nextDouble();
                 System.out.println("Digite a altura da forma espacial:");
@@ -38,15 +106,17 @@ public class Main {
                 FormaGeometricaEspacial formaEspacial = new FormaGeometricaEspacial(base, altura, profundidade);
                 System.out.println("A área da forma espacial é: " + formaEspacial.calcularArea());
                 System.out.println("O volume da forma espacial é: " + formaEspacial.calcularVolume());
-            } else if (opcao == 3) {
+                    break;
+
+                case 3:
                 System.out.println("Escolha a forma geométrica especial:");
                 System.out.println("1. Quadrado");
                 System.out.println("2. Retângulo");
                 System.out.println("3. Triângulo");
                 System.out.println("4. Trapézio");
                 System.out.println("5. Losango");
-                System.out.println("6. Paralelogramo");
-
+                System.out.println("6. Paralelogramo"); 
+                
                 int opcaoFormaEspecial = scanner.nextInt();
 
                 switch (opcaoFormaEspecial) {
@@ -94,12 +164,8 @@ public class Main {
                         break;
                     default:
                         System.out.println("Opção inválida.");
+                    break;
                 }
-            } else if (opcao == 4) {
-                System.out.println("Saindo do programa...");
-                break;
-            } else {
-                System.out.println("Opção inválida.");
             }
         }
     }

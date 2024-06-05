@@ -18,6 +18,11 @@ class CalculadoraFormas {
         return (base * altura) / 2;
     }
 
+    //Método para calcular a área de triângulo
+    public double calcularAreaTrianguloEquilatero(double altura) {
+        return (Math.sqrt(3)/4)*altura*altura;
+    }
+
     // Método para calcular área de um trapézio
     static double calcularAreaTrapezio(double baseMaior, double baseMenor, double altura) {
         return ((baseMaior + baseMenor) * altura) / 2;
@@ -31,5 +36,10 @@ class CalculadoraFormas {
     // Método para calcular área de um paralelogramo
     static double calcularAreaParalelogramo(double base, double altura) {
         return base * altura;
+    }
+
+    // Método para calcular a área do círculo
+    public double calcularAreaCirculo(double raio) {
+        return Math.PI * raio * raio;
     }
 }
